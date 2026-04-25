@@ -11,14 +11,17 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
+:root{--primary:#16a34a;--dark:#0f172a;--muted:#64748b;--light:#f8fafc}
 body{
-    font-family: Arial, sans-serif;
-    background:#f8f9fa;
-    color:#222;
+    font-family:Inter,Arial,sans-serif;
+    background:var(--light);
+    color:#111827
 }
 
 .navbar{
-    background:#0d1117;
+    background:rgba(15,23,42,.92)!important;
+    backdrop-filter:blur(10px);
+    box-shadow:0 8px 24px rgba(0,0,0,.08)
 }
 
 .navbar-brand{
