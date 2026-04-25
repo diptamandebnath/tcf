@@ -11,28 +11,70 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-:root{--primary:#16a34a;--dark:#0f172a;--muted:#64748b;--light:#f8fafc}
+:root{
+    --primary:#16a34a;
+    --dark:#0f172a;
+    --light:#f8fafc;
+}
+
 body{
-    font-family:Inter,Arial,sans-serif;
+    font-family:Arial, sans-serif;
     background:var(--light);
-    color:#111827
+    color:#111827;
 }
 
+/* Navbar */
 .navbar{
-    background:rgba(15,23,42,.92)!important;
+    background:rgba(15,23,42,0.92)!important;
     backdrop-filter:blur(10px);
-    box-shadow:0 8px 24px rgba(0,0,0,.08)
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    padding:14px 0;
 }
 
-.navbar-brand{font-size:1.55rem;font-weight:800;letter-spacing:.3px}.navbar-brand span{color:var(--primary)}
+.navbar-brand{
+    font-size:1.55rem;
+    font-weight:800;
+    color:#fff !important;
+}
 
+.navbar-brand span{
+    color:var(--primary);
+}
 
+.navbar-nav .nav-link{
+    color:#e5e7eb !important;
+    font-weight:600;
+    padding:10px 16px !important;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.navbar-nav .nav-link:hover{
+    background:rgba(255,255,255,.08);
+    color:#fff !important;
+}
+
+.btn-nav{
+    background:var(--primary);
+    color:#fff !important;
+    padding:10px 18px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.btn-nav:hover{
+    background:#15803d;
+}
+
+/* Hero */
 .hero{
-    background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
+    background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
     background-size:cover;
     background-position:center;
     color:white;
-    padding:120px 20px;
+    padding:130px 20px;
     text-align:center;
 }
 
@@ -61,6 +103,7 @@ body{
     background:#00a57a;
 }
 
+/* Sections */
 .section-title{
     text-align:center;
     font-weight:700;
@@ -122,16 +165,28 @@ footer{
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
 <div class="container">
-<a class="navbar-brand" href="#">The <span>Coding</span> Farm</a>
 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
-<div class="collapse navbar-collapse" id="nav">
-<ul class="navbar-nav mx-auto gap-lg-2">
+<a class="navbar-brand" href="#">
+The <span>Coding</span> Farm
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarMenu">
+
+<ul class="navbar-nav mx-auto gap-lg-2 text-center">
 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
 <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="Apps.html">Our Apps</a></li>
 </ul>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdYYyMllFe5BWgoZMjXmi4vEXJO8x6MOdJsJVx7TZNNY-M0Vg/viewform?usp=sf_link" class="btn-nav">
+Get Quote
+</a>
+
 </div>
 </div>
 </nav>
@@ -142,7 +197,7 @@ footer{
 <h1>Build Your Digital Future</h1>
 <p>We create modern websites, Android apps, business software, branding and data solutions for startups, students and growing businesses.</p>
 <br>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSdYYyMllFe5BWgoZMjXmi4vEXJO8x6MOdJsJVx7TZNNY-M0Vg/viewform?usp=sf_link" class="btn-main">Start Your Project</a>
+<a href="#" class="btn-main">Start Your Project</a>
 </div>
 </section>
 
@@ -165,7 +220,7 @@ footer{
 <div class="service-card">
 <div class="service-icon">📱</div>
 <h4>Mobile App Development</h4>
-<p>Modern Android applications for startups, business and internal operations.</p>
+<p>Modern Android applications for startups and businesses.</p>
 </div>
 </div>
 
@@ -173,7 +228,7 @@ footer{
 <div class="service-card">
 <div class="service-icon">💻</div>
 <h4>Desktop Software</h4>
-<p>Custom desktop tools, management systems and productivity software.</p>
+<p>Custom management systems and productivity tools.</p>
 </div>
 </div>
 
@@ -181,7 +236,7 @@ footer{
 <div class="service-card">
 <div class="service-icon">📊</div>
 <h4>Data Visualization</h4>
-<p>Transform raw data into dashboards, charts and useful insights.</p>
+<p>Dashboards, charts and business insights.</p>
 </div>
 </div>
 
@@ -189,7 +244,7 @@ footer{
 <div class="service-card">
 <div class="service-icon">🤖</div>
 <h4>AI & Machine Learning</h4>
-<p>Smart automation, predictive models and AI integrations.</p>
+<p>Smart automation and AI integrations.</p>
 </div>
 </div>
 
@@ -197,7 +252,7 @@ footer{
 <div class="service-card">
 <div class="service-icon">🎓</div>
 <h4>Student Projects</h4>
-<p>Academic software projects, reports, assignments and prototypes.</p>
+<p>Academic software projects and assignments.</p>
 </div>
 </div>
 
@@ -216,6 +271,7 @@ footer{
 <div class="col-md-3"><h5>✔ Affordable Pricing</h5></div>
 <div class="col-md-3"><h5>✔ Dedicated Support</h5></div>
 </div>
+
 </div>
 </section>
 
